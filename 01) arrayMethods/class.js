@@ -108,3 +108,19 @@
 // console.log('response', response);
 // // 10
 // // 15
+
+const people = [
+  { name: 'Jona', weight: 100 },
+  { name: 'Ana', weight: 60 },
+  { name: 'Pepe', weight: 40 },
+];
+
+const sortedPeople = people.sort(function (p1, p2) {
+  if (p1.weight > p2.weight) { // sort people from min to max
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+console.log(sortedPeople);
