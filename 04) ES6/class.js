@@ -113,6 +113,11 @@ console.log('add(1, 2)', add(1, 2));
 console.log('add(1, 2, 0)', add(1, 2, 0));
 console.log('add(1, 2, 3)', add(1, 2, 3));
 
+// ---------- Template literals ----------
+const min = 0;
+console.log('El número mínimo es ' + min);
+console.log(`El número mínimo es ${min}`);
+
 // ---------- Advanced loops ----------
 console.log('---------- Advanced loops ----------');
 const advancedArray = [1, 2, 3, 4, 5];
