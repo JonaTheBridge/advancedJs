@@ -51,6 +51,23 @@ emptyDiv.innerText = 'Escribo en el div vacio';
 
 // emptyDiv.removeChild(replacedP);
 
+// // ---------- Eventos ----------
+
+// // https://developer.mozilla.org/es/docs/Web/Events
+
+// function onEventFunction(param) {
+//   console.log('onEventFunction', param);
+// }
+
+// function addEventListenerFunction(param) {
+//   console.log('addEventListenerFunction', param);
+// }
+
+// const myButton = document.getElementById('myButtonId');
+
+// myButton.onclick = onEventFunction;
+// myButton.addEventListener('click', addEventListenerFunction);
+
 // // ---------- Formularios ----------
 
 function manageMinMax() {
