@@ -113,6 +113,18 @@ console.log('add(1, 2)', add(1, 2));
 console.log('add(1, 2, 0)', add(1, 2, 0));
 console.log('add(1, 2, 3)', add(1, 2, 3));
 
+// ---------- Named params ----------
+
+function divide({ dividend, divisor }) {
+  return dividend / divisor;
+}
+
+const dividend = 10;
+const divisor = 2;
+const divideArgs = { divisor, dividend };
+console.log('divide(1, 2)', divide(divideArgs));
+console.log('divide(1, 2)', divide({ dividend, divisor }));
+
 // ---------- Template literals ----------
 const min = 0;
 console.log('El número mínimo es ' + min);
