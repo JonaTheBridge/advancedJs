@@ -99,8 +99,3 @@ const upperInitial = splittedPhrase[0].toUpperCase();
 splittedPhrase[0] = upperInitial;
 const x = splittedPhrase.join('');
 console.log(x);
-// 'jona quiere irse ya'
-
-
-// 'Soy un crack en javascript'
-// 'Jona quiere irse ya'
