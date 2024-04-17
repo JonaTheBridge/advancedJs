@@ -104,6 +104,10 @@ const original = ['a', 'b', 'c', 'd',];
 // console.log('original', original); // [ 'a', 'b', 'c', 'd', 'x' ]
 // console.log('response', response); // 5
 
+// const response = original.push('x', 'y');
+// console.log('original', original); // [ 'a', 'b', 'c', 'd', 'x', 'y' ]
+// console.log('response', response); // 6
+
 
 // *** REVERSE ***
 // const response = original.reverse();
