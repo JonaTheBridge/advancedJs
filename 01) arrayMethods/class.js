@@ -5,6 +5,10 @@ const original = ['a', 'b', 'c', 'd',];
 // console.log('original', original); // ['a', 'b', 'c', 'd']
 // console.log('response', response); // 'c'
 
+// const response = original.at(-1);
+// console.log('original', original); // ['a', 'b', 'c', 'd']
+// console.log('response', response); // 'd'
+
 
 // *** CONCAT ***
 // const response = original.concat(['e', 'f',]);
