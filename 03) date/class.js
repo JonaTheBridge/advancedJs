@@ -2,8 +2,9 @@
 
 const today = new Date();
 
-console.log(today);
+console.log(today); // GMT (Greenwich Mean Time)
 
+console.log('toString', today.toString());
 console.log('getMilliseconds', today.getMilliseconds());
 console.log('getSeconds', today.getSeconds());
 console.log('getMinutes', today.getMinutes());
@@ -21,4 +22,5 @@ today.setMinutes(0);
 today.setSeconds(0);
 today.setMilliseconds(0);
 
-console.log('setters', today.toString());
+console.log('toString after setters', today.toString());
+console.log('new Date after setters', new Date(today));
