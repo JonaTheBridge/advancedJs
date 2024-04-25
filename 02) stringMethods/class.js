@@ -145,6 +145,7 @@ const myString = 'Hello world';
 // const myObject = { name: 'Jona', gender: 'male', job: 'Lead Instructor', format: 'Part Time',};
 // const myObjectAsString = JSON.stringify(myObject);
 // const myParsedObject = JSON.parse(myObjectAsString);
+// console.log(`Text ${myObject}`);
 // console.log(typeof myObject, myObject);
 // console.log(typeof myObjectAsString, myObjectAsString);
 // console.log(typeof myParsedObject, myParsedObject);
