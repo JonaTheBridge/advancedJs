@@ -19,10 +19,11 @@
 // // todos los elementos que encuentre
 // console.log(allElements);
 
-// ---------- Modificación de elementos ----------
-const emptyDiv = document.getElementById('emptyDiv');
 
-emptyDiv.innerText = 'Escribo en el div vacio';
+// ---------- Modificación de elementos ----------
+// const emptyDiv = document.getElementById('emptyDiv');
+
+// emptyDiv.innerText = 'Escribo en el div vacio';
 // emptyDiv.innerHTML = 'Escribo en el div vacio';
 // emptyDiv.innerHTML = '<h1>Escribo en el div vacio</h1>';
 
@@ -33,6 +34,7 @@ emptyDiv.innerText = 'Escribo en el div vacio';
 // emptyDiv.setAttribute('accesskey', 'modifiedAccesskey');
 // emptyDiv.setAttribute('class', 'nocturne');
 // emptyDiv.classList.add('myClass');
+
 
 // // ---------- Creación/eliminación de elementos ----------
 // const nestedDiv = document.createElement('div');
@@ -51,51 +53,21 @@ emptyDiv.innerText = 'Escribo en el div vacio';
 
 // emptyDiv.removeChild(replacedP);
 
+
 // // ---------- Eventos ----------
 
 // // https://developer.mozilla.org/es/docs/Web/Events
+
+// const myButton = document.getElementById('myButtonId');
 
 // function onEventFunction(param) {
 //   console.log('onEventFunction', param);
 // }
 
+// myButton.onclick = onEventFunction;
+
 // function addEventListenerFunction(param) {
 //   console.log('addEventListenerFunction', param);
 // }
 
-// const myButton = document.getElementById('myButtonId');
-
-// myButton.onclick = onEventFunction;
 // myButton.addEventListener('click', addEventListenerFunction);
-
-// // ---------- Formularios ----------
-
-function manageMinMax() {
-  const myInput = document.forms['myFormName']['myInputName'];
-  const min = myInput.getAttribute('min'); // 0
-  const max = myInput.getAttribute('max'); // 10
-
-  const message = document.getElementById('message');
-  if (message) {
-    document.forms['myFormName'].removeChild(message);
-  }
-
-  if (parseInt(myInput.value) < parseInt(min)) {
-    myInput.value = min;
-    const p = document.createElement('p');
-    p.id = 'message';
-    // p.innerText = 'El número mínimo es ' + min;
-    p.innerText = `El número mínimo es ${min}`;
-    document.forms['myFormName'].appendChild(p);
-  }
-
-  if (parseInt(myInput.value) > parseInt(max)) {
-    myInput.value = max;
-    const p = document.createElement('p');
-    p.id = 'message';
-    p.innerHTML = 'El número máximo es ' + max;
-    document.forms['myFormName'].appendChild(p);
-  }
-}
-
-document.forms['myFormName']['myInputName'].addEventListener('change', manageMinMax);
