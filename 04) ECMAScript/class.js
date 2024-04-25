@@ -139,8 +139,6 @@
 
 
 // ---------- Optional params ----------
-// console.log('---------- Optional params ----------');
-
 // function add(num1, num2, num3 = 0) {
 //   return num1 + num2 + num3;
 // }
@@ -151,7 +149,6 @@
 
 
 // ---------- Named params ----------
-
 // function divide({ dividend, divisor, }) {
 //   return dividend / divisor;
 // }
