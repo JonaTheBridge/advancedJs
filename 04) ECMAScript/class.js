@@ -31,8 +31,8 @@
 // const destructuringNumbers = [1, 2, 3,];
 
 // console.log('---------- Array without destructuring ----------');
-// // const firstItem = destructuringNumbers[0];
-// // const thirdItem = destructuringNumbers[2];
+// const firstItem = destructuringNumbers[0];
+// const thirdItem = destructuringNumbers[2];
 
 // console.log('---------- Array with destructuring ----------');
 // const [firstItem, , thirdItem,] = destructuringNumbers;
@@ -43,12 +43,12 @@
 // const teacher = { name: 'Jona', gender: 'male', job: 'Lead Instructor', format: 'Part Time',};
 
 // console.log('---------- Object without destructuring ----------');
-// // const username = teacher.name;
+// const username = teacher.name;
 
 // console.log('---------- Object with destructuring ----------');
 // const { name: username, gender, job = 'unemployed', description = 'new description', } = teacher;
 // console.log('username', username);
-// console.log('age', age);
+// console.log('gender', gender);
 // console.log('job', job);
 // console.log('description', description);
 
@@ -69,8 +69,9 @@
 // };
 
 // const teacherWithSpread = {
-//   notSpreadedProp: 'notSpreadedProp',
+//   gender: 'male',
 //   ...teacherToSpread,
+//   name: 'Pepe',
 // };
 
 // console.log('teacherWithSpread', teacherWithSpread);
@@ -97,14 +98,13 @@
 
 
 // ---------- Ternario ----------
-// console.log('---------- Without ternary ----------');
 // const myAge = 33;
 // const adultAge = 18;
 // const amIAdult = myAge >= adultAge;
+
+// console.log('---------- Without ternary ----------');
 // if (amIAdult) {
 //   console.log('Im adult! 1');
-// } else {
-//   console.log('Im a baby! 1');
 // }
 
 // console.log('---------- With ternary and both logs ----------');
@@ -121,6 +121,7 @@
 // null && console.log('null && log');
 // false && console.log('false && log');
 // NaN && console.log('NaN && log');
+// 0 && console.log('0 && log');
 // true && console.log('true && log'); // we can see this log
 
 // console.log('---------- || ----------');
@@ -128,6 +129,7 @@
 // null || console.log('null || log'); // we can see this log
 // false || console.log('false || log'); // we can see this log
 // NaN || console.log('NaN || log'); // we can see this log
+// 0 || console.log('0 || log'); // we can see this log
 // true || console.log('true || log');
 
 // console.log('---------- nullish coalescing o ?? ----------');
@@ -135,6 +137,7 @@
 // null ?? console.log('null ?? log'); // we can see this log
 // false ?? console.log('false ?? log');
 // NaN ?? console.log('NaN ?? log');
+// 0 ?? console.log('0 ?? log');
 // true ?? console.log('true ?? log');
 
 
@@ -156,8 +159,8 @@
 // const dividend = 10;
 // const divisor = 2;
 // const divideArgs = { divisor, dividend, };
-// console.log('divide(1, 2)', divide(divideArgs));
-// console.log('divide(1, 2)', divide({ dividend, divisor, }));
+// console.log('divide(10, 2)', divide(divideArgs));
+// console.log('divide(10, 2)', divide({ dividend, divisor, }));
 
 
 // ---------- Template literals ----------
@@ -175,10 +178,10 @@
 // }
 
 // console.log('----- forEach -----');
-// // function myFunction(value, index) {
-// //   console.log(value, index);
-// // }
-// // advancedArray.forEach(myFunction);
+// function myFunction(value, index) {
+//   console.log(value, index);
+// }
+// advancedArray.forEach(myFunction);
 // advancedArray.forEach((value, index) => { console.log(value, index); });
 
 // console.log('----- forIn -----');
