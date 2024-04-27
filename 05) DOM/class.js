@@ -39,6 +39,7 @@
 // // ---------- Creación/eliminación de elementos ----------
 // const nestedDiv = document.createElement('div');
 // const nestedP = document.createElement('p');
+// nestedP.innerText = 'Soy una P nueva';
 // nestedDiv.appendChild(nestedP);
 // emptyDiv.appendChild(nestedDiv);
 
@@ -48,10 +49,12 @@
 
 // const replacedP = document.createElement('p');
 // replacedP.id = 'replacedP';
-// // emptyDiv.replaceChild(replacedP, firstDiv);
+// replacedP.innerText = 'Soy otra P';
+// emptyDiv.replaceChild(replacedP, firstDiv);
 // firstDiv.parentElement.replaceChild(replacedP, firstDiv);
 
 // emptyDiv.removeChild(replacedP);
+// replacedP.parentElement.removeChild(replacedP);
 
 
 // // ---------- Eventos ----------
