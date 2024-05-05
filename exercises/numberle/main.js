@@ -20,7 +20,7 @@ function getSecretNumberAsArray({ maxNumberLength }) {
 
   // 2,5,5,7,7 SN
   // 2,2,5,5,7
-  return [2,5,5,7,7];
+  return secretNumberAsArray;
 }
 
 function getHeader({ title }) {
