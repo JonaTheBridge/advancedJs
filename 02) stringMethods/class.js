@@ -68,7 +68,7 @@ const myString = 'Hello world';
 
 // *** REPLACE ALL ***
 // const response = '1-2-3-4=10'.replaceAll('-', '+');
-// console.log('myString', myString); // 'Hello world'
+// console.log('myString', myString); // '1-2-3-4=10'
 // console.log('response', response); // '1+2+3+4=10'
 
 
