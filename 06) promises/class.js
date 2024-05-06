@@ -17,8 +17,9 @@
 //     // console.error('ERROR!', err);
 //     // console.error('JSON.stringify(ERROR!)', JSON.stringify(err));
 //     const { cause, } = err;
-//     const message = `ERROR: Request to ${cause.hostname} response with code ${cause.code}`;
-//     throw new Error(message);
+//     const msg = `ERROR: Request to ${cause.hostname} response with code ${cause.code}`;
+//     const myError = new Error(msg);
+//     throw myError;
 //   }
 // }
 
